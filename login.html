@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Iniciar Sesión | Hotel Paradise</title>
+
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+
+    <!-- =========================
+         HEADER
+    ========================== -->
+
+    <header>
+
+        <div class="container">
+
+            <a href="index.html" class="logo">
+                Hotel <span>Paradise</span>
+            </a>
+
+            <nav>
+
+                <ul>
+
+                    <li>
+                        <a href="index.html">
+                            Inicio
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="habitaciones.html">
+                            Habitaciones
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="reservas.html">
+                            Reservas
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="contacto.html">
+                            Contacto
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="login.html" class="active">
+                            Iniciar Sesión
+                        </a>
+                    </li>
+
+                </ul>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+
+    <!-- =========================
+         LOGIN
+    ========================== -->
+
+    <main class="login-page">
+
+        <section class="login-container">
+
+            <div class="login-card">
+
+                <h1>Bienvenido</h1>
+
+                <p>
+                    Inicia sesión para continuar en Hotel Paradise.
+                </p>
+
+
+                <!--
+                    Al presionar el botón, el formulario
+                    enviará al usuario a index.html.
+                -->
+
+                <form action="index.html" method="get">
+
+                    <div class="input-group">
+
+                        <label for="correo">
+                            Correo Electrónico
+                        </label>
+
+                        <input
+                            type="email"
+                            id="correo"
+                            name="correo"
+                            placeholder="ejemplo@correo.com"
+                            required>
+
+                    </div>
+
+
+                    <div class="input-group">
+
+                        <label for="password">
+                            Contraseña
+                        </label>
+
+                        <input
+                            type="password"
+                            id="password"
+                            name="password"
+                            placeholder="Ingrese su contraseña"
+                            minlength="8"
+                            required>
+
+                    </div>
+
+
+                    <div class="remember">
+
+                        <label>
+
+                            <input
+                                type="checkbox"
+                                name="recordar">
+
+                            Recordarme
+
+                        </label>
+
+                        <a href="#">
+                            ¿Olvidó su contraseña?
+                        </a>
+
+                    </div>
+
+
+                    <button
+                        type="submit"
+                        class="btn">
+
+                        Iniciar Sesión
+
+                    </button>
+
+                </form>
+
+
+                <div class="register">
+
+                    <p>
+                        ¿No tienes una cuenta?
+                        <a href="#">
+                            Crear Cuenta
+                        </a>
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <footer>
+
+        <div class="container">
+
+            <p>
+                © 2026 Hotel Paradise |
+                Todos los derechos reservados.
+            </p>
+
+        </div>
+
+    </footer>
+
+</body>
+
+</html>
